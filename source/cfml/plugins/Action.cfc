@@ -3,8 +3,8 @@
  * Copyright (c) 2016, Paul Klinkenberg, Utrecht, The Netherlands.
  * All rights reserved.
  *
- * Date: 2016-02-10 16:27:33
- * Revision: 2.2.0.
+ * Date: 2016-02-10 16:48:54
+ * Revision: 2.2.1.
  * Project info: http://www.lucee.nl/post.cfm/railo-admin-log-analyzer (installer version)
  *
  * This library is free software; you can redistribute it and/or
@@ -42,12 +42,12 @@
 	
 
 	<cffunction name="getAnalyzerVersion" output="false" hint="Returns the Log analyzer version to install">
-		<cfset local.zipFile = expandPath('./Loganalyzer.zip') />
+		<cfset local.zipFile = getDirectoryFromPath(getCurrentTemplatePath()) & 'Loganalyzer.zip' />
 		<cfif not fileExists(local.zipFile)>
-			<cfreturn "[version unknown]" />
+			<cfreturn "[version unknown, zip file missing at #local.zipFile#]" />
 		</cfif>
 		<cftry>
-			<cfset local.config = xmlParse(fileRead(local.zipFile & "$config.xml")) />
+			<cfset local.config = xmlParse(fileRead("zip://" & local.zipFile & "!/config.xml")) />
 			<cfreturn local.config.config.info.version.xmlText />
 			<cfcatch>
 				<cfreturn "[version error: #cfcatch.message#]" />

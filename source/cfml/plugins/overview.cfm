@@ -3,8 +3,8 @@
  * Copyright (c) 2016, Paul Klinkenberg, Utrecht, The Netherlands.
  * All rights reserved.
  *
- * Date: 2016-02-10 16:27:33
- * Revision: 2.2.0.
+ * Date: 2016-02-10 16:48:54
+ * Revision: 2.2.1.
  * Project info: http://www.lucee.nl/post.cfm/railo-admin-log-analyzer (installer version)
  *
  * This library is free software; you can redistribute it and/or
@@ -76,7 +76,7 @@
 </script>
 <cfset frmaction = rereplace(action('overview'), "^[[:space:]]+", "") />
 <cfoutput>
-	<p>Use the form underneath to install or update the <a href="http://www.lucee.nl/post.cfm/railo-admin-log-analyzer" target="_blank" title="More info; links opens new window">Log analyzer plugin</a> #getAnalyzerVersion()# into your websites.</p>
+	<p>Use the form underneath to install or update the <a href="http://www.lucee.nl/post.cfm/railo-admin-log-analyzer" target="_blank" title="More info; links opens new window">Log analyzer plugin</a> <i>#getAnalyzerVersion()#</i> into your websites.</p>
 	<form action="#frmaction#" method="post">
 		<table class="tbl maintbl">
 			<thead>
