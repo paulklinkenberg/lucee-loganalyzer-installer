@@ -1,0 +1,13 @@
+
+{
+"builtDate":"2016-02-10 16:48:58",
+"version":"2.2.1.26",
+"id":"617195F7-CE76-47A0-AACBF9CCA02916FC",
+"name":"loganalyzerinstaller",
+"codename":"loganalyzerinstaller",
+"label":"Log analyzer installer",
+"description":"With this extension, you can install the Log analyzer into all your Lucee web contexts / admins",
+ "type":"server",
+ "author":"Paul Klinkenberg",
+ "category":"admin plugin"
+}

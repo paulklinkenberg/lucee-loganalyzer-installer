@@ -3,8 +3,8 @@
  * Copyright (c) 2016, Paul Klinkenberg, Utrecht, The Netherlands.
  * All rights reserved.
  *
- * Date: 2016-02-10 16:27:32
- * Revision: 2.2.0.
+ * Date: 2016-02-10 16:48:54
+ * Revision: 2.2.1.
  * Project info: http://www.lucee.nl/post.cfm/railo-admin-log-analyzer (installer version)
  *
  * This library is free software; you can redistribute it and/or
