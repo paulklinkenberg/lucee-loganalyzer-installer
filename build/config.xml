@@ -8,7 +8,7 @@
 		<description>{desc}</description>
 		<version>{version}</version>
 		<category>{category}</category>
-		<image>logo.png</image>
+		<image>/logo.png</image>
 		<paypal></paypal>
 		<author>{author}</author>
 		<codename>{codename}</codename>
